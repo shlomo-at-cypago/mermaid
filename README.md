@@ -12,7 +12,7 @@ flowchart TD
   subgraph Ext["External Frameworks Mapping Service"]
     D --> H[POST /api/v1/frameworks/process\nor /process-upload]
     E --> I[POST /api/v1/frameworks/resume]
-    F --> J[GET /api/v1/jobs/{run_id}]
+    F --> J[GET /api/v1/jobs/:run_id]
   end
 
   subgraph DB["Postgres"]
